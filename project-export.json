@@ -1,0 +1,146 @@
+{
+  "exportDate": "2026-05-11T20:12:02.054Z",
+  "structure": "📁 lib\n  📁 mock\n    📄 dados_mock.dart\n  📁 models\n    📄 treino.dart\n    📄 usuario.Dart\n  📁 screens\n    📄 alimentacao_screen.dart\n    📄 cadastro_screen.dart\n    📄 home_screen.dart\n    📄 metas_screen.dart\n    📄 perfil_screen.dart\n    📄 treino_screen.dart\n  📁 services\n    📄 auth_service.dart\n  📁 widgets\n    📄 custom_button.dart\n    📄 custom_textfield.dart\n    📄 treino_card.dart\n  📄 .gitignore\n  📄 misc.xml\n  📄 modules.xml\n  📄 workspace.xml\n📁 src\n  📄 main.dart\n📄 .gitignore\n📄 FitLife.iml",
+  "files": [
+    {
+      "path": ".gitignore",
+      "content": "### IntelliJ IDEA ###\nout/\n!**/src/main/**/out/\n!**/src/test/**/out/\n.kotlin\n\n### Eclipse ###\n.apt_generated\n.classpath\n.factorypath\n.project\n.settings\n.springBeans\n.sts4-cache\nbin/\n!**/src/main/**/bin/\n!**/src/test/**/bin/\n\n### NetBeans ###\n/nbproject/private/\n/nbbuild/\n/dist/\n/nbdist/\n/.nb-gradle/\n\n### VS Code ###\n.vscode/\n\n### Mac OS ###\n.DS_Store",
+      "language": "",
+      "size": 352,
+      "lastModified": "2026-05-11T15:49:28.721Z"
+    },
+    {
+      "path": "FitLife.iml",
+      "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<module type=\"JAVA_MODULE\" version=\"4\">\r\n  <component name=\"NewModuleRootManager\" inherit-compiler-output=\"true\">\r\n    <exclude-output />\r\n    <content url=\"file://$MODULE_DIR$\">\r\n      <sourceFolder url=\"file://$MODULE_DIR$/src\" isTestSource=\"false\" />\r\n    </content>\r\n    <orderEntry type=\"inheritedJdk\" />\r\n    <orderEntry type=\"sourceFolder\" forTests=\"false\" />\r\n  </component>\r\n</module>",
+      "language": "",
+      "size": 433,
+      "lastModified": "2026-05-11T15:49:31.765Z"
+    },
+    {
+      "path": "lib\\.gitignore",
+      "content": "# Default ignored files\r\n/shelf/\r\n/workspace.xml\r\n# Editor-based HTTP Client requests\r\n/httpRequests/\r\n# Ignored default folder with query files\r\n/queries/\r\n# Datasource local storage ignored files\r\n/dataSources/\r\n/dataSources.local.xml\r\n",
+      "language": "",
+      "size": 238,
+      "lastModified": "2026-05-11T15:49:36.139Z"
+    },
+    {
+      "path": "lib\\misc.xml",
+      "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" default=\"true\" project-jdk-name=\"openjdk-26\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>",
+      "language": "xml",
+      "size": 261,
+      "lastModified": "2026-05-11T15:49:31.775Z"
+    },
+    {
+      "path": "lib\\mock\\dados_mock.dart",
+      "content": "import '../models/usuario.dart';\r\nimport '../models/treino.dart';\r\n\r\nclass DadosMock {\r\n\r\n  static Usuario usuarioAtual = Usuario(\r\n    nome: \"Arthur Ribeiro\",\r\n    email: \"usuario@fitlife.com\",\r\n    idade: 24,\r\n    peso: 75.5,\r\n    altura: 1.78,\r\n    objetivo: \"Ganho de massa muscular\",\r\n  );\r\n\r\n  static List<Treino> treinos = [\r\n    Treino(nome: \"Supino Reto\", grupoMuscular: \"Peito\", series: 4, repeticoes: 12),\r\n    Treino(nome: \"Crucifixo com Halteres\", grupoMuscular: \"Peito\", series: 3, repeticoes: 15),\r\n    Treino(nome: \"Agachamento Livre\", grupoMuscular: \"Pernas\", series: 4, repeticoes: 10),\r\n    Treino(nome: \"Leg Press 45º\", grupoMuscular: \"Pernas\", series: 3, repeticoes: 12),\r\n    Treino(nome: \"Puxada Alta\", grupoMuscular: \"Costas\", series: 4, repeticoes: 12),\r\n    Treino(nome: \"Remada Curvada\", grupoMuscular: \"Costas\", series: 3, repeticoes: 10),\r\n    Treino(nome: \"Rosca Direta\", grupoMuscular: \"Braços\", series: 3, repeticoes: 12),\r\n    Treino(nome: \"Tríceps na Polia\", grupoMuscular: \"Braços\", series: 3, repeticoes: 15),\r\n  ];\r\n\r\n  static List<Map<String, String>> refeicoes = [\r\n    {\"titulo\": \"Café da Manhã\", \"descricao\": \"Ovos mexidos com aveia e frutas vermelhas.\"},\r\n    {\"titulo\": \"Almoço\", \"descricao\": \"Peito de frango grelhado, batata doce e brócolis.\"},\r\n    {\"titulo\": \"Lanche pré-treino\", \"descricao\": \"Banana com pasta de amendoim.\"},\r\n    {\"titulo\": \"Jantar\", \"descricao\": \"Filé de peixe assado com salada completa e azeite.\"},\r\n  ];\r\n\r\n  static List<String> metas = [\r\n    \"Perda de peso\",\r\n    \"Ganho de massa muscular\",\r\n    \"Melhorar condicionamento físico\",\r\n    \"Aumentar frequência de treinos\"\r\n  ];\r\n\r\n  static List<String> historicoPesos = [\"77.0 kg\", \"76.2 kg\", \"75.5 kg\"];\r\n}",
+      "language": "",
+      "size": 1738,
+      "lastModified": "2026-05-11T18:56:04.475Z"
+    },
+    {
+      "path": "lib\\models\\treino.dart",
+      "content": "class Treino {\r\n  final String nome;\r\n  final String grupoMuscular; // Peito, Pernas, Costas, Braços\r\n  final int series;\r\n  final int repeticoes;\r\n\r\n  Treino({\r\n    required this.nome,\r\n    required this.grupoMuscular,\r\n    required this.series,\r\n    required this.repeticoes,\r\n  });\r\n}",
+      "language": "",
+      "size": 288,
+      "lastModified": "2026-05-11T18:47:57.607Z"
+    },
+    {
+      "path": "lib\\models\\usuario.Dart",
+      "content": "\nrclass Usuario {\nString nome;\nString email;\nint idade;\ndouble peso;\ndouble altura;\nString objetivo;\n\nUsuario({\n  required this.nome,\n  required this.email,\n  required this.idade,\n  required this.peso,\n  required this.altura,\n  required this.objetivo,\n});\n}",
+      "language": "",
+      "size": 257,
+      "lastModified": "2026-05-11T18:47:39.048Z"
+    },
+    {
+      "path": "lib\\modules.xml",
+      "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectModuleManager\">\r\n    <modules>\r\n      <module fileurl=\"file://$PROJECT_DIR$/FitLife.iml\" filepath=\"$PROJECT_DIR$/FitLife.iml\" />\r\n    </modules>\r\n  </component>\r\n</project>",
+      "language": "xml",
+      "size": 261,
+      "lastModified": "2026-05-11T15:49:31.770Z"
+    },
+    {
+      "path": "lib\\screens\\alimentacao_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../mock/dados_mock.dart';\r\n\r\nclass AlimentacaoScreen extends StatelessWidget {\r\n  const AlimentacaoScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(title: const Text(\"Alimentação Saudável\"), backgroundColor: Colors.teal),\r\n      body: ListView.builder(\r\n        padding: const EdgeInsets.all(16),\r\n        itemCount: DadosMock.refeicoes.length,\r\n        itemBuilder: (context, index) {\r\n          final item = DadosMock.refeicoes[index];\r\n          return Card(\r\n            elevation: 2,\r\n            margin: const EdgeInsets.only(bottom: 12),\r\n            child: ListTile(\r\n              leading: const Icon(Icons.apple, color: Colors.green, size: 30),\r\n              title: Text(item[\"titulo\"]!, style: const TextStyle(fontWeight: FontWeight.bold)),\r\n              subtitle: Text(item[\"descricao\"]!),\r\n            ),\r\n          );\r\n        },\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 994,
+      "lastModified": "2026-05-11T18:52:46.616Z"
+    },
+    {
+      "path": "lib\\screens\\cadastro_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../widgets/custom_button.dart';\r\nimport '../widgets/custom_textfield.dart';\r\nimport '../mock/dados_mock.dart';\r\n\r\nclass CadastroScreen extends StatelessWidget {\r\n  final TextEditingController nomeCtrl = TextEditingController();\r\n  final TextEditingController idadeCtrl = TextEditingController();\r\n  final TextEditingController pesoCtrl = TextEditingController();\r\n  final TextEditingController alturaCtrl = TextEditingController();\r\n  final TextEditingController objetivoCtrl = TextEditingController();\r\n\r\n  CadastroScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(title: const Text(\"Cadastro de Usuário\"), backgroundColor: Colors.teal),\r\n      body: SingleChildScrollView(\r\n        padding: const EdgeInsets.all(24.0),\r\n        child: Column(\r\n          children: [\r\n            CustomTextField(label: \"Nome Completo\", controller: nomeCtrl),\r\n            CustomTextField(label: \"Idade\", controller: idadeCtrl, keyboardType: TextInputType.number),\r\n            CustomTextField(label: \"Peso (kg)\", controller: pesoCtrl, keyboardType: TextInputType.number),\r\n            CustomTextField(label: \"Altura (m)\", controller: alturaCtrl, keyboardType: TextInputType.number),\r\n            CustomTextField(label: \"Objetivo Fitness\", controller: objetivoCtrl),\r\n            const SizedBox(height: 20),\r\n            CustomButton(\r\n              texto: \"Salvar Perfil\",\r\n              onPressed: () {\r\n\r\n                if (nomeCtrl.text.isNotEmpty) {\r\n                  DadosMock.usuarioAtual.nome = nomeCtrl.text;\r\n                  DadosMock.usuarioAtual.objetivo = objetivoCtrl.text;\r\n                }\r\n                Navigator.pop(context);\r\n              },\r\n            ),\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 1841,
+      "lastModified": "2026-05-11T18:56:04.452Z"
+    },
+    {
+      "path": "lib\\screens\\home_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../mock/dados_mock.dart';\r\nimport 'treino_screen.dart';\r\nimport 'alimentacao_screen.dart';\r\nimport 'perfil_screen.dart';\r\nimport 'metas_screen.dart';\r\n\r\nclass HomeScreen extends StatelessWidget {\r\n  const HomeScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    final usuario = DadosMock.usuarioAtual;\r\n\r\n    return Scaffold(\r\n      appBar: AppBar(\r\n        title: const Text(\"FitLife Dashboard\"),\r\n        backgroundColor: Colors.teal,\r\n      ),\r\n      body: Padding(\r\n        padding: const EdgeInsets.all(16.0),\r\n        child: Column(\r\n          crossAxisAlignment: CrossAxisAlignment.start,\r\n          children: [\r\n            Text(\"Olá, ${usuario.nome}!\", style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),\r\n            const SizedBox(height: 10),\r\n            Card(\r\n              color: Colors.teal.shade50,\r\n              child: Padding(\r\n                padding: const EdgeInsets.all(16.0),\r\n                child: Column(\r\n                  crossAxisAlignment: CrossAxisAlignment.stretch,\r\n                  children: [\r\n                    const Text(\"Resumo da Evolução\", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),\r\n                    const SizedBox(height: 8),\r\n                    Text(\"Objetivo Atual: ${usuario.objetivo}\"),\r\n                    Text(\"Peso Registrado: ${usuario.peso} kg\"),\r\n                  ],\r\n                ),\r\n              ),\r\n            ),\r\n            const SizedBox(height: 20),\r\n            const Text(\"Navegação Rápida\", style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),\r\n            const SizedBox(height: 10),\r\n            Expanded(\r\n              child: GridView.count(\r\n                crossAxisCount: 2,\r\n                crossAxisSpacing: 10,\r\n                mainAxisSpacing: 10,\r\n                children: [\r\n                  _buildNavButton(context, Icons.fitness_center, \"Treinos\", const TreinoScreen()),\r\n                  _buildNavButton(context, Icons.restaurant_menu, \"Alimentação\", const AlimentacaoScreen()),\r\n                  _buildNavButton(context, Icons.flag, \"Metas & Evolução\", const MetasScreen()),\r\n                  _buildNavButton(context, Icons.person, \"Perfil\", const PerfilScreen()),\r\n                ],\r\n              ),\r\n            )\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n\r\n  Widget _buildNavButton(BuildContext context, IconData icon, String title, Widget screen) {\r\n    return ElevatedButton(\r\n      style: ElevatedButton.styleFrom(\r\n        backgroundColor: Colors.white,\r\n        foregroundColor: Colors.teal,\r\n        elevation: 2,\r\n        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),\r\n      ),\r\n      onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => screen)),\r\n      child: Column(\r\n        mainAxisAlignment: MainAxisAlignment.center,\r\n        children: [\r\n          Icon(icon, size: 40),\r\n          const SizedBox(height: 10),\r\n          Text(title, textAlign: TextAlign.center, style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),\r\n        ],\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 3174,
+      "lastModified": "2026-05-11T18:50:53.631Z"
+    },
+    {
+      "path": "lib\\screens\\metas_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../mock/dados_mock.dart';\r\n\r\nclass MetasScreen extends StatefulWidget {\r\n  const MetasScreen({super.key});\r\n\r\n  @override\r\n  State<MetasScreen> createState() => _MetasScreenState();\r\n}\r\n\r\nclass _MetasScreenState extends State<MetasScreen> {\r\n\r\n  final Map<String, bool> _metasStatus = {\r\n    for (var item in DadosMock.metas) item: false\r\n  };\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Scaffold(\r\n      appBar: AppBar(title: const Text(\"Metas e Evolução\"), backgroundColor: Colors.teal),\r\n      body: SingleChildScrollView(\r\n        padding: const EdgeInsets.all(16.0),\r\n        child: Column(\r\n          crossAxisAlignment: CrossAxisAlignment.start,\r\n          children: [\r\n            const Text(\"Histórico de Peso Corporal\", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.teal)),\r\n            const SizedBox(height: 10),\r\n            Card(\r\n              child: ListView.builder(\r\n                shrinkWrap: true,\r\n                physics: const NeverScrollableScrollPhysics(),\r\n                itemCount: DadosMock.historicoPesos.length,\r\n                itemBuilder: (context, index) {\r\n                  return ListTile(\r\n                    leading: const Icon(Icons.timeline, color: Colors.teal),\r\n                    title: Text(\"Registro #${DadosMock.historicoPesos.length - index}\"),\r\n                    trailing: Text(DadosMock.historicoPesos[index], style: const TextStyle(fontWeight: FontWeight.bold)),\r\n                  );\r\n                },\r\n              ),\r\n            ),\r\n            const SizedBox(height: 30),\r\n            const Text(\"Metas Fitness Pessoais\", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.teal)),\r\n            const SizedBox(height: 10),\r\n            Card(\r\n              child: Column(\r\n                children: _metasStatus.keys.map((meta) {\r\n                  return CheckboxListTile(\r\n                    activeColor: Colors.teal,\r\n                    title: Text(meta, style: TextStyle(decoration: _metasStatus[meta]! ? TextDecoration.lineThrough : null)),\r\n                    value: _metasStatus[meta],\r\n                    onChanged: (bool? value) {\r\n                      setState(() {\r\n                        _metasStatus[meta] = value ?? false;\r\n                      });\r\n                    },\r\n                  );\r\n                }).toList(),\r\n              ),\r\n            )\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 2520,
+      "lastModified": "2026-05-11T18:56:04.463Z"
+    },
+    {
+      "path": "lib\\screens\\perfil_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../mock/dados_mock.dart';\r\n\r\nclass PerfilScreen extends StatelessWidget {\r\n  const PerfilScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    final u = DadosMock.usuarioAtual;\r\n\r\n    return Scaffold(\r\n      appBar: AppBar(title: const Text(\"Perfil do Usuário\"), backgroundColor: Colors.teal),\r\n      body: Padding(\r\n        padding: const EdgeInsets.all(24.0),\r\n        child: Column(\r\n          children: [\r\n            const CircleAvatar(radius: 50, backgroundColor: Colors.teal, child: Icon(Icons.person, size: 60, color: Colors.white)),\r\n            const SizedBox(height: 20),\r\n            Text(u.nome, style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),\r\n            Text(u.email, style: const TextStyle(color: Colors.grey)),\r\n            const Divider(height: 40, thickness: 1),\r\n            ListTile(leading: const Icon(Icons.cake), title: const Text(\"Idade\"), trailing: Text(\"${u.idade} anos\")),\r\n            ListTile(leading: const Icon(Icons.monitor_weight), title: const Text(\"Peso Atual\"), trailing: Text(\"${u.peso} kg\")),\r\n            ListTile(leading: const Icon(Icons.height), title: const Text(\"Altura\"), trailing: Text(\"${u.altura} m\")),\r\n            ListTile(leading: const Icon(Icons.track_changes), title: const Text(\"Objetivo\"), trailing: Text(u.objetivo)),\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 1425,
+      "lastModified": "2026-05-11T18:53:11.201Z"
+    },
+    {
+      "path": "lib\\screens\\treino_screen.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../mock/dados_mock.dart';\r\nimport '../widgets/treino_card.dart';\r\n\r\nclass TreinoScreen extends StatelessWidget {\r\n  const TreinoScreen({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return DefaultTabController(\r\n      length: 4,\r\n      child: Scaffold(\r\n        appBar: AppBar(\r\n          title: const Text(\"Lista de Treinos\"),\r\n          backgroundColor: Colors.teal,\r\n          bottom: const TabBar(\r\n            indicatorColor: Colors.white,\r\n            tabs: [\r\n              Tab(text: \"Peito\"),\r\n              Tab(text: \"Pernas\"),\r\n              Tab(text: \"Costas\"),\r\n              Tab(text: \"Braços\"),\r\n            ],\r\n          ),\r\n        ),\r\n        body: TabBarView(\r\n          children: [\r\n            _buildListaPorCategoria(\"Peito\"),\r\n            _buildListaPorCategoria(\"Pernas\"),\r\n            _buildListaPorCategoria(\"Costas\"),\r\n            _buildListaPorCategoria(\"Braços\"),\r\n          ],\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n\r\n  Widget _buildListaPorCategoria(String categoria) {\r\n    final filtrados = DadosMock.treinos.where((t) => t.grupoMuscular == categoria).toList();\r\n    return ListView.builder(\r\n      itemCount: filtrados.length,\r\n      itemBuilder: (context, index) {\r\n        return TreinoCard(treino: filtrados[index]);\r\n      },\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 1353,
+      "lastModified": "2026-05-11T18:51:39.782Z"
+    },
+    {
+      "path": "lib\\services\\auth_service.dart",
+      "content": "class AuthService {\r\n  // Simula um login validando e-mail e senha\r\n  bool login(String email, String senha) {\r\n    if (email.isNotEmpty && senha.isNotEmpty) {\r\n      return true;\r\n    }\r\n    return false;\r\n  }\r\n}",
+      "language": "",
+      "size": 213,
+      "lastModified": "2026-05-11T18:56:04.427Z"
+    },
+    {
+      "path": "lib\\widgets\\custom_button.dart",
+      "content": "import 'package:flutter/material.dart';\r\n\r\nclass CustomButton extends StatelessWidget {\r\n  final String texto;\r\n  final VoidCallback onPressed;\r\n\r\n  const CustomButton({super.key, required this.texto, required this.onPressed});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return SizedBox(\r\n      width: double.infinity,\r\n      height: 50,\r\n      child: ElevatedButton(\r\n        style: ElevatedButton.styleFrom(\r\n          backgroundColor: Colors.teal,\r\n          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),\r\n        ),\r\n        onPressed: onPressed,\r\n        child: Text(texto, style: const TextStyle(fontSize: 18, color: Colors.white)),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 707,
+      "lastModified": "2026-05-11T18:49:02.548Z"
+    },
+    {
+      "path": "lib\\widgets\\custom_textfield.dart",
+      "content": "import 'package:flutter/material.dart';\r\n\r\nclass CustomTextField extends StatelessWidget {\r\n  final String label;\r\n  final bool isPassword;\r\n  final TextEditingController? controller;\r\n  final TextInputType keyboardType;\r\n\r\n  const CustomTextField({\r\n    super.key,\r\n    required this.label,\r\n    this.isPassword = false,\r\n    this.controller,\r\n    this.keyboardType = TextInputType.text,\r\n  });\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Padding(\r\n      padding: const EdgeInsets.only(bottom: 16.0),\r\n      child: TextField(\r\n        controller: controller,\r\n        obscureText: isPassword,\r\n        keyboardType: keyboardType,\r\n        decoration: InputDecoration(\r\n          labelText: label,\r\n          border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),\r\n          focusedBorder: const OutlineInputBorder(\r\n            borderSide: BorderSide(color: Colors.teal),\r\n          ),\r\n        ),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 961,
+      "lastModified": "2026-05-11T18:49:21.840Z"
+    },
+    {
+      "path": "lib\\widgets\\treino_card.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport '../models/treino.dart';\r\n\r\nclass TreinoCard extends StatelessWidget {\r\n  final Treino treino;\r\n\r\n  const TreinoCard({super.key, required this.treino});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return Card(\r\n      margin: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),\r\n      elevation: 3,\r\n      child: ListTile(\r\n        leading: const Icon(Icons.fitness_center, color: Colors.teal, size: 35),\r\n        title: Text(treino.nome, style: const TextStyle(fontWeight: FontWeight.bold)),\r\n        subtitle: Text(\"Séries: ${treino.series} | Repetições: ${treino.repeticoes}\"),\r\n        trailing: Chip(label: Text(treino.grupoMuscular)),\r\n      ),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 737,
+      "lastModified": "2026-05-11T18:49:45.475Z"
+    },
+    {
+      "path": "lib\\workspace.xml",
+      "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"21514229-daad-4f9f-835a-45d2415a3fd4\" name=\"Changes\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ProjectColorInfo\"><![CDATA[{\n  \"associatedIndex\": 7,\n  \"fromUser\": false\n}]]></component>\n  <component name=\"ProjectId\" id=\"3DaK6vmPn7lyplVvKlGqSJXJtRx\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"ModuleVcsDetector.initialDetectionPerformed\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"RunOnceActivity.typescript.service.memoryLimit.init\": \"true\",\n    \"dart.analysis.tool.window.visible\": \"false\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"onboarding.tips.debug.path\": \"C:/Users/lucas/OneDrive/FitLife/FitLife/src/Main.java\"\n  }\n}]]></component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"21514229-daad-4f9f-835a-45d2415a3fd4\" name=\"Changes\" comment=\"\" />\n      <created>1778514571072</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1778514571072</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/Main.java</url>\n          <line>10</line>\n          <option name=\"timeStamp\" value=\"1\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n  </component>\n</project>",
+      "language": "xml",
+      "size": 2116,
+      "lastModified": "2026-05-11T15:54:08.393Z"
+    },
+    {
+      "path": "src\\main.dart",
+      "content": "import 'package:flutter/material.dart';\r\nimport 'screens/login_screen.dart';\r\n\r\nvoid main() {\r\n  runApp(const FitLifeApp());\r\n}\r\n\r\nclass FitLifeApp extends StatelessWidget {\r\n  const FitLifeApp({super.key});\r\n\r\n  @override\r\n  Widget build(BuildContext context) {\r\n    return MaterialApp(\r\n      title: 'FitLife',\r\n      debugShowCheckedModeBanner: false,\r\n      theme: ThemeData(\r\n        primarySwatch: Colors.teal,\r\n        useMaterial3: false,\r\n      ),\r\n      home: LoginScreen(),\r\n    );\r\n  }\r\n}",
+      "language": "",
+      "size": 500,
+      "lastModified": "2026-05-11T18:56:04.441Z"
+    }
+  ]
+}

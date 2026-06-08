@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api
+
+  datasource:
+    url: jdbc:sqlite:fitlife.db
+    driver-class-name: org.sqlite.JDBC
+
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.community.dialect.SQLiteDialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
